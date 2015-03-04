@@ -2,7 +2,6 @@
   background-color: #ffffff;
   color:#000000;
   font-family:"Poiret One", "Avenir Next Condensed";
-  font-weight: lighter;
 }
 
 body{
@@ -19,9 +18,19 @@ a{
   font-size: 1.25em;
 }
 
+.class2 a{
+  font-size: 1em;
+  color:#b2b2b2;
+}
+
 a:hover{
   text-decoration: none;
-  color:#e6e6e6;
+  color:#cccccc;
+}
+
+.class2 a:hover{
+  text-decoration: none;
+  color:#cccccc;
 }
 
 .top-bar{
@@ -67,15 +76,11 @@ picture{
   margin-left: 5%;
   vertical-align: top;
   margin-top: 2%;
+  font-size: 1.1em;
 }
 
 h3{
   text-decoration: underline;
-}
-
-#read-more{
-  font-size: 1em;
-  color:#cccccc;
 }
 
 .footer{
