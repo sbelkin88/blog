@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/CSS" rel="stylesheet" href="../default.css"/>
+  <link type="text/CSS" rel="stylesheet" href="blog-default.css"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+  <title>Samantha Belkin</title>
+</head>
+<body>
+<section class="top-bar">
+<section class="header" id="envelope">
+  <a href="mailto:samantha.belkin@gmail.com"><img src="../envelope.png"/></a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../about.html">ABOUT</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="blog-index.html">BLOG</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../projects.html">PROJECTS</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../contact.html">CONTACT</a>
+</section>
+</section>
+<h1>
+  <a href="../index.html">SAMANTHA SARAH BELKIN</a>
+</h1>
+<h2>
+  tag line here
+</h2>
+<hr id="line-break">
+
+<div-blog>
+  <h3>CSS Technical Blog</h3>
+  <h4>March 3, 2015</h4>
+  <p></p>
+  <article>
+    Since week 2 had a reputation for being the most time-consuming, in true Sam-fashion I started on the challenges Friday night and worked through the weekend.  I have a fear about not being able to succeed at this, compunded by working at my job full-time still, so it's important to me to be as ahead of the ball as I can be.  I had started the HTML Codecademy course before Phase 0, but I had never heard of or touched CSS.  For someone who doesn't know either, you can think of HTML and CSS like a recipe.  The list of ingredients is the HTML code, whereas the instructions are like the CSS.  The CSS tells the browser what to do with your HTML, and how certain elements should blend together.
+  </article>
+  <p></p>
+  <article>
+    To be honest, after going through the tutorial, I felt much better about the whole language.  HTML didn't make too much sense on its own (just like a recipe is rendered useless if you only have the list of ingredients), so CSS really cleared up the whole website-building business. There are still many aspects of CSS I haven't delved into yet I'm sure, but today I'll be blogging about 2 topics I had issues with when first using it: when to use a class vs. an ID, and what the difference is between displaying an object inline vs. inline block.
+  </article>
+  <p></p>
+  <article>
+    One of the first technical bumps I ran into when creating my website was styling only certain portions of the HTML document.  To stick with the recipe metaphor, I wanted to know how to blend the sugar with the butter, in isolation of how the rest of the recipe comes together.  I knew there was a way to tag certain blocks of code as either a class or an ID, but to me they pretty much meant the same thing. After doing some research (and to be honest, playing around with my website), it looks like best practice is to use a class when multiple elements of your site need to be styled the same way, and to use an ID only on a specific one-time-use case.  I also found a great section in the CSS recommendations regarding specificity: an ID is vastly more specific than a class and as such will overrule other rules.  This is important when creating your CSS as it helps you figure out which portion of the CSS the HTML will follow.
+    <br>
+    <br>
+    <img src="CSS Rec Screenshot.png"/>
+
+  </article>
+  <p></p>
+  <article>
+    Another aspect that I had to do some extra reading on was the display rule.  In CSS, you can tell certain objects how to display on the page.  Three of those selections are inline, block, and inline block.  Displaying an object as a block renders the object literally as a block. Each object turns into a square shaped area, and each block stacks under the previous one.  Displaying an object inline means pretty much what it says.  You can think of inline objects like text.  Each object goes to the right of the previous one, and they continue to loop around onto the next "line" of your page.
+  </article>
+  <p></p>
+  <article>
+    One of my initial questions was "What is the different between displaying objects inline vs. inline block?".  I think a visual is the best way to understand this concept, but it looks to me like inline block is essentially the best of both an inline object and a block object. Both inline and block displays are relatively rigid: inline elements cannot have a width or a height set, and block elements force a line break after it (stacking).  Inline block combines the two and allows elements to sit next to each other horizontally while also respecting a defined height and width.  Here is a visual representation:
+    <br>
+    <br>
+    <img src="Display Screenshot.png"/>
+    </article>
+</div-blog>
+<right-column>
+<h4 class="right">Recent Posts</h4>
+<ul>
+  <li><a class="blog-link" href="t2-css-design.html">W2T: CSS Technical</a></li>
+  <li><a class="blog-link" href="c1-chefs-kitchen.html">W1C: Chef's Kitchen</a></li>
+  <li><a class="blog-link" href="t1-git-blog.html">W1T: Git Bloggin'</a></li>
+</ul>
+</right-column>
+<section class="footer">Copyright 2015 Samantha Belkin</section>
+</body>
+</html>
