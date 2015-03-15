@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/CSS" rel="stylesheet" href="../default.css"/>
+  <link type="text/CSS" rel="stylesheet" href="blog-default.css"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+  <title>Samantha Belkin</title>
+</head>
+<body>
+<section class="top-bar">
+<section class="header" id="envelope">
+  <a href="mailto:samantha.belkin@gmail.com"><img src="https://github.com/sbelkin88/sbelkin88.github.io/blob/master/Envelope.png?raw=true"/></a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../about.html">ABOUT</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="blog-index.html">BLOG</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../projects.html">PROJECTS</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../contact.html">CONTACT</a>
+</section>
+</section>
+<h1>
+  <a href="../index.html">SAMANTHA SARAH BELKIN</a>
+</h1>
+<h2>
+  contemplate, wish, wonder
+</h2>
+<hr id="line-break">
+
+<div-blog>
+  <h3>Ruby Arrays and Hashes</h3>
+  <h4>March 14, 2015</h4>
+  <p></p>
+  <article>
+    When I first started learning Ruby on Codecademy, before Phase 0, I thought Arrays and Hashes were two completely separate things.  Even as I read blog posts from DBC alumni about how they kept picking the wrong thing, I thought to myself, they're totally different, how could you get them confused?  Well, it makes a lot more sense now.  As it turns out, Arrays and Hashes in Ruby are very similar.  Both are ways of storing and indexing information. Both have keys and values.  And both grow as more information is added.  But there is one key difference: information in Arrays are organized using an integer as the key, whereas anything can be a key with Hashes (a string, float number, etc.)
+  </article>
+  <p></p>
+  <article>
+    To take a step back, when you think of an index, such as one in a textbook, each key word or phrase is assigned to a page number where information can be found about it.  This is exactly how information is stored in both arrays and hashes.  An array is simply a collection of information organized in a logical sequence.  It looks something like this:
+    <br>
+    <br>
+    array = [1,2,3,4,5]
+    <br>
+    <br>
+    Each number within the brackets is indexed according to the position it's in.  So "1" is in the zero-eth position; its key is 0 and the value is 1.  "2" is in the first position; its key is 1 and the value is 2, and so on and so forth.  Once the array is created you can tell the computer to print the value by inputting the key.
+  </article>
+  <p></p>
+  <article>
+    You can have an array full of other types of things, such as this:
+    <br>
+    <br>
+    array_2 = ["Sam",2,"DBC",8.06]
+    <br>
+    <br>
+    The basic construct of the key and value pairs still exists. If you ask the computer what value is stored in the key 3, the response will be 8.06.
+  </article>
+  <p></p>
+  <article>
+    Hashes on the other hand can have non-numeric keys.  As such you define both the key and the value.  For example:
+    <br>
+    <br>
+    months{
+    <br>
+      "January" => 1,
+      <br>
+      "February" => 2,
+      <br>
+      "March" => 3,
+      <br>
+  }
+    <br>
+    <br>
+    As you can see above, January is now a key and 1 is its value.
+  </article>
+  <p></p>
+  <article>
+    In short, while arrays and hashes are very similar methods of storing information, there are definitely use cases for both, and it's important to consider the project you're working on, and the scope of the data, before deciding which method to use.
+    </article>
+</div-blog>
+<right-column>
+<h4 class="right">Recent Posts</h4>
+<ul>
+  <li><a class="blog-link" href="c3-thinking-style.html">W3C: Thinking Style</a></li>
+  <li><a class="blog-link" href="t3-arrays-hashes.html">W3T: Ruby Arrays and Hashes</a></li>
+  <li><a class="blog-link" href="t2-css-design.html">W2T: CSS Technical</a></li>
+  <li><a class="blog-link" href="c1-chefs-kitchen.html">W1C: Chef's Kitchen</a></li>
+  <li><a class="blog-link" href="t1-git-blog.html">W1T: Git Bloggin'</a></li>
+</ul>
+</right-column>
+<section class="footer">Copyright 2015 Samantha Belkin</section>
+</body>
+</html>
