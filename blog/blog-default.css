@@ -42,3 +42,8 @@ right-column{
   font-size: 1em;
   color: #999999;
 }
+
+pre{
+  font-family: Courier;
+  font-size: 0.85em;
+}
