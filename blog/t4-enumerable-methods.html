@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/CSS" rel="stylesheet" href="../default.css"/>
+  <link type="text/CSS" rel="stylesheet" href="blog-default.css"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+  <title>Samantha Belkin</title>
+</head>
+<body>
+<section class="top-bar">
+<section class="header" id="envelope">
+  <a href="mailto:samantha.belkin@gmail.com"><img src="https://github.com/sbelkin88/sbelkin88.github.io/blob/master/Envelope.png?raw=true"/></a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../about.html">ABOUT</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="blog-index.html">BLOG</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../projects.html">PROJECTS</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../contact.html">CONTACT</a>
+</section>
+</section>
+<h1>
+  <a href="../index.html">SAMANTHA SARAH BELKIN</a>
+</h1>
+<h2>
+  contemplate, wish, wonder
+</h2>
+<hr id="line-break">
+
+<div-blog>
+  <h3>Ruby Enumerables</h3>
+  <h4>March 16, 2015</h4>
+  <p></p>
+  <article>
+    Enumerables.  What the heck does that word even mean?  When first reading up on Enumerables, we were supposed to research certain Enumerable methods like <code>map</code>, <code>group_by</code>, and <code>cycle</code>.  However, when looking up <code>map</code> in the Ruby docs, I was directed towards the section on Arrays, which confused me even more.  Is map a method used on Arrays, or a method under Enumerables?  As it turns out, it's really both.  An Enumerable is simply a collection of methods which can be used to search or manipulate collections of data (therefore they can be used to search or manipulate Arrays as an example).  Therefore to break it down even further, <code>map</code> is a method belonging to a class of methods called Enumerables, which can be used on collections of data such as Arrays and Hashes.  Make sense?
+  </article>
+  <p></p>
+  <article>
+    There are a few different types of Enumerable methods which do different things:
+    <ul>
+      <li>Methods which don't actually touch the underlying data and just go through each item</li>
+        <ul>
+          <li><code>each</code></li>
+        </ul>
+      <li>Methods that pull certain elements out of the underlying data based on criteria and populate a new collection with them</li>
+        <ul>
+          <li><code>select</code></li>
+        </ul>
+      <li>Methods which change all underlying elements through a block and populate a new collection with them.  Note this does not alter the original collection.</li>
+        <ul>
+          <li><code>collect</code></li>
+          <li><code>map</code></li>
+        </ul>
+      <li>Methods which actually change the original collection of data (are destructive). </li>
+        <ul>
+          <li><code>map!</code></li>
+        </ul>
+      <li>Methods which take a collection of underlying data and reduces it to a single value (i.e. adding up all elements). </li>
+        <ul>
+          <li><code>inject</code></li>
+        </ul>
+      </ul>
+  </article>
+  <p></p>
+  <article>
+    Getting a little off topic, the original purpose of this post was to discuss one Enumerable, of which I chose <code>map</code>. Map essentially creates a new collection of data (let's call it an Array going forward for ease), using all the original elements of an array, and changes them using a block.  The syntax looks like this:
+    <pre>
+      array.map {|element| element+2}
+    </pre>
+    What this says is take each element of the original array, add 2 to it, and populate the new value in a new array.  So if the original array was <code>[1,2,3,4,5]</code>, the new array would look like <code>[3,4,5,6,7]</code>. This is helpful as you can use this method either destructively (using <code>map!</code>), or non-destructively using <code>map</code>.
+  </article>
+  <p></p>
+  <article>
+    <code>map</code> can also be used with Hashes, but you must include both the key and value in the code.  For example:
+    <pre>
+      hash.map {|key, value| value+2}
+    </pre>
+  </article>
+</div-blog>
+<right-column>
+<h4 class="right">Recent Posts</h4>
+<ul>
+  <li><a class="blog-link" href="c4-tech-issues.html">W4C: Tech Issues</a></li>
+  <li><a class="blog-link" href="t4-enumerable-methods.html">W4T: Enumerable Map</a></li>
+  <li><a class="blog-link" href="c3-thinking-style.html">W3C: Thinking Style</a></li>
+  <li><a class="blog-link" href="t3-arrays-hashes.html">W3T: Ruby Arrays and Hashes</a></li>
+  <li><a class="blog-link" href="t2-css-design.html">W2T: CSS Technical</a></li>
+  <li><a class="blog-link" href="c1-chefs-kitchen.html">W1C: Chef's Kitchen</a></li>
+  <li><a class="blog-link" href="t1-git-blog.html">W1T: Git Bloggin'</a></li>
+</ul>
+</right-column>
+<section class="footer">Copyright 2015 Samantha Belkin</section>
+</body>
+</html>

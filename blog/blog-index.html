@@ -45,7 +45,87 @@
 <hr id="line-break">
 
 <div-blog>
-<h3>Thinking Style</h3>
+  <h3>Tech Issues</h3>
+  <h4>March 16, 2015</h4>
+  <p></p>
+  <article>
+    When I saw the topic for this week's cultural blog - "Issues in Tech" - I knew exactly what I wanted to research.  It's no secret that being a woman in tech is rare.  But why is this the case?  When I started out on this path to DBC, I received more than a few "why are you doing this?" and "what made you interested in programming?" questions.  It's difficult to answer these and be enthusiastic about this path when they're looking at you like you have three heads and have gone insane.  But is it really that "crazy" for a woman to want to switch industries and learn how to code?  Especially, as it turns out, a caucasian woman?  I'd like that answer to be no.  While I received great enthusiasm from friends who were already in the tech industry, the reactions were not the same from others.
+  </article>
+  <p></p>
+  <article>
+    From doing some initial research, it seems there are several main issues surrounding women in tech: lack of early learning/exposure for young girls and teens, lack of women role models/mentors in the industry, and continuing sexism and harrassment during interviews and in the workplace.
+  </article>
+  <p></p>
+  <article>
+    Just as technology is a continually changing industry, I think that gender roles need to play catch-up and change along with it.  Throughout history women have had to continually fight for more and more rights, and I think unfortunately, the time has come for this fight to happen in technology.  This needs to start with the younger generation - if you don't start teaching younger girls about the tech world, no one will grow up to take our places. I can personally relate to this as I knew nothing about this industry until about two years ago (when I was 24!).  Programming/web-developing/entrepreneurship is something that should be introduced to kids back in middle school, and should be continued through college.  I feel that this is something that all kids could benefit from and would go a long way to introduce girls to the industry and teach them valuable skills early in life.  If this trend continues, we could exponentially increase the number of women pursuing degrees in tech fields and continuing into the industry after college.  If there were more of an equal gender balance in the industry, decisions like mine wouldn't be seen as being so strange.
+  </article>
+  <p></p>
+  <article>
+    This issue is a natural introduction to the next: the fact that there are so few mentors or women role models in the industry.  If you create a cycle of introducing young girls to technology, they will grow up to be mentors for the next generation.  The cycle has to start somewhere - why not have it start with us?  I feel a huge responsibility as a woman going into tech to give back, and do my part to be a mentor to other women.  I think we can be pivotal in implementing programs in the schools we grew up in and starting the trend.  When kids have a real-life role model to look up to, today's far-fetched idea becomes tomorrow's potential reality.  They will be able to see someone else accomplish it, and will have a path to follow in.
+  </article>
+  <p></p>
+  <article>
+    Last, but certainly not least, the culture of the tech industry needs a major facelift.  Companies need to realize that by encouraging and allowing sexism and harrassment to occur in their workplaces, they are hurting the entire community.  A crucial aspect of technology is that it's ever-growing and ever-changing, and we need to keep inventing and creating in order to keep that up.  Firms need to realize that the next biggest and best idea may (and very probably will) come from a woman, and they should want that woman on their team to develop it.  I think a big part of evolving in this space comes from the hiring process today.  Yes, I understand culture, and "fit", is a big part of whether you hire someone or not, but merit should play an equally large part.  Resumes should be evaluated on skill instead of the name at the top of the page, or the picture you find when you google said name.  Then bring the person in and see if they happen to be a cultural fit as well.
+  </article>
+  <p></p>
+  <article>
+    I think men in this industry have an equally large responsibility on their shoulders.  Create change in your own circles and companies.  Encourage your firm to hire great thinkers regardless of gender, and treat them with the same respect you show your male colleagues.  I believe the harrassment and condescending behavior needs to end, and we need a higher set of standards for ourselves.
+  </article>
+  <p></p>
+  <article>
+    I hope that my generation can succeed where past generations haven't, and that we can overcome the issues that women face in this industry.  I hope that we can put in the effort to invest in future generations and spark the trend that changes tech's culture. I know I will be doing my part. Will you do yours?
+  </article>
+  <hr>
+  <h3>Ruby Enumerables</h3>
+  <h4>March 16, 2015</h4>
+  <p></p>
+  <article>
+    Enumerables.  What the heck does that word even mean?  When first reading up on Enumerables, we were supposed to research certain Enumerable methods like <code>map</code>, <code>group_by</code>, and <code>cycle</code>.  However, when looking up <code>map</code> in the Ruby docs, I was directed towards the section on Arrays, which confused me even more.  Is map a method used on Arrays, or a method under Enumerables?  As it turns out, it's really both.  An Enumerable is simply a collection of methods which can be used to search or manipulate collections of data (therefore they can be used to search or manipulate Arrays as an example).  Therefore to break it down even further, <code>map</code> is a method belonging to a class of methods called Enumerables, which can be used on collections of data such as Arrays and Hashes.  Make sense?
+  </article>
+  <p></p>
+  <article>
+    There are a few different types of Enumerable methods which do different things:
+    <ul>
+      <li>Methods which don't actually touch the underlying data and just go through each item</li>
+        <ul>
+          <li><code>each</code></li>
+        </ul>
+      <li>Methods that pull certain elements out of the underlying data based on criteria and populate a new collection with them</li>
+        <ul>
+          <li><code>select</code></li>
+        </ul>
+      <li>Methods which change all underlying elements through a block and populate a new collection with them.  Note this does not alter the original collection.</li>
+        <ul>
+          <li><code>collect</code></li>
+          <li><code>map</code></li>
+        </ul>
+      <li>Methods which actually change the original collection of data (are destructive). </li>
+        <ul>
+          <li><code>map!</code></li>
+        </ul>
+      <li>Methods which take a collection of underlying data and reduces it to a single value (i.e. adding up all elements). </li>
+        <ul>
+          <li><code>inject</code></li>
+        </ul>
+      </ul>
+  </article>
+  <p></p>
+  <article>
+    Getting a little off topic, the original purpose of this post was to discuss one Enumerable, of which I chose <code>map</code>. Map essentially creates a new collection of data (let's call it an Array going forward for ease), using all the original elements of an array, and changes them using a block.  The syntax looks like this:
+    <pre>
+      array.map {|element| element+2}
+    </pre>
+    What this says is take each element of the original array, add 2 to it, and populate the new value in a new array.  So if the original array was <code>[1,2,3,4,5]</code>, the new array would look like <code>[3,4,5,6,7]</code>. This is helpful as you can use this method either destructively (using <code>map!</code>), or non-destructively using <code>map</code>.
+  </article>
+  <p></p>
+  <article>
+    <code>map</code> can also be used with Hashes, but you must include both the key and value in the code.  For example:
+    <pre>
+      hash.map {|key, value| value+2}
+    </pre>
+  </article>
+  <hr>
+  <h3>Thinking Style</h3>
   <h4>March 14, 2015</h4>
   <p></p>
   <article>
@@ -171,6 +251,8 @@
 <right-column>
 <h4 class="right">Recent Posts</h4>
 <ul>
+  <li><a class="blog-link" href="c4-tech-issues.html">W4C: Tech Issues</a></li>
+  <li><a class="blog-link" href="t4-enumerable-methods.html">W4T: Enumerable Map</a></li>
   <li><a class="blog-link" href="c3-thinking-style.html">W3C: Thinking Style</a></li>
   <li><a class="blog-link" href="t3-arrays-hashes.html">W3T: Ruby Arrays and Hashes</a></li>
   <li><a class="blog-link" href="t2-css-design.html">W2T: CSS Technical</a></li>
