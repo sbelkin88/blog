@@ -45,20 +45,34 @@
 <hr id="line-break">
 
 <div-blog>
-  <h3>Git Bloggin'</h3>
-  <h4>February 25, 2015</h4>
+  <h3>Blocs, Procs, and Lambdas</h3>
+  <h4>March 31, 2015</h4>
   <p></p>
   <article>
-    As a completely new programmer myself, I am writing this blog in hopes of tracking my own thoughts as well as potentially educating others who are interested in learning about programming.  This post is my first technical blog and will cover the basics of git: version control, how git tracks changes, and the benefits of using GitHub to store code.
+    Blocs, Procs, and Lambdas - does it sound like we're back in a Frat house in college yet?  As opposed to Greek letters, Blocs, Procs, and Lambdas are actually important tools that you can use in Ruby code.  They are essentially snippets of code which you tell the computer to do within a method.  We've already seen them when using enumerables, but here is an example:
+    <pre>
+    def method(arguments)
+      arguments.each {|argument| do something to the argument}
+    end
+    </pre>
+    The little bit in the curly brackets {} is what we call a Bloc.  Blocs function like a method in that they are telling the code to do something, but they are technically undefined and unnamed.
   </article>
   <p></p>
   <article>
-    First things first: what is git? Git is a tool that you can download to your computer which makes it easy to track changes to certain documents and merge changes.  It is very similar in concept to how the tracking changes functionality works in Microsoft Word.  Not only can you use it alone to track your own changes and update files, but it also allows multiple people to work on the same file and make changes which can then be merged to produce a final version. Git uses something called version control to do this - essentially it saves a separate version of a file every time you tell it to.  This can be useful if you make an error in a file and want to revert to how the file was at an earlier point in time.  The more times you save your changes, the more possibilities exist for this.  Developers use version control to be able to revert to prior code when something in the new code fails.  Oftentimes code is crucial to business operations and it is imperative to be able to revert to the tested, working code in order to get a project done.  Version control allows the developer to re-deploy the working code, and then go back and make the necessary updates to new code.
+    Procs are very similar to Blocs in that they also are bits of code which tell the computer to do something, however they are different in that they are defined and saved as a variable.  So you can take the exact same code as in our example above and define it as a variable which then can get passed into the method, instead of writing it out:
+    <pre>
+    proc = Proc.new {|argument| do something to the argument}
+
+    def method(arguments)
+      arguments.each(&proc)
+    end
+    </pre>
+    The only difference here is that you use the "&" sign when you pull the Proc into your method.  These can be useful when you want to assign your Proc more than one thing to do, or if you want to refer back to it multiple times in your code.
   </article>
   <p></p>
   <article>
-    GitHub is an online storage system for code.  Developers use GitHub to remotely store their code, so others can access it and make changes of their own.  The benefits of this is that you can have multiple people making changes to the same document housed on GitHub and the system will keep track of these and merge them at the end to form one coherent document.  The individuals don't have to be in the same location to collaborate on a project.
-    </article>
+    Last, but not least, we have Lambdas.  Lambdas are rarely used, but they are the same thing as Procs, but are more detailed like methods.  The other main difference is that you can use the "return" keyword within a Lambda since it will only return the Lambda, not the entire method.  If you use "return" in a Bloc or a Proc, it will exit out of the entire method at the return.  The other main difference is that Lambdas will check the number of arguments passed into it (like methods), whereas Procs and Blocs do not.
+  </article>
 </div-blog>
 <right-column>
 <h4 class="right">Recent Posts</h4>

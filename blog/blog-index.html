@@ -45,6 +45,50 @@
 <hr id="line-break">
 
 <div-blog>
+  <h3>Stereotype Threat</h3>
+  <h4>April 1, 2015</h4>
+  <p></p>
+  <article>
+    This week's cultural blog is focused on an anomaly called stereotype threat. Stereotype threat occurs when a subset of a group of people who are all evenly qualified underperform based on expectations.  For example, women might perform worse on math tests due to the stigma that men are better at math, even though they have just as much knowledge and are as well prepared.
+  </article>
+  <p></p>
+  <article>
+    Personally I can't say that I've been affected by this, even though I am a woman who pursued a degree in a predominately male field.  I think this is mainly due to the circumstances in which I was raised, and the environment of the schools I attended.  I don't feel like anyone around me has ever mentioned that stereotype or encouraged it.  My only experience (and seeing my peers' experiences) with underperformance has been from not being prepared enough or test anxiety in general.  While I've certainly been nervous about failing, it's been more about my own insecurities rather than because I'm female.  In several articles I read, this wasn't the case with stereotype threat.  Instead, minority groups performed equally well on tests such as the SAT, but underperformed when told the test would judge them on their intelligence level.
+  </article>
+  <p></p>
+  <article>
+    I think this issue can be mediated through changing the environments that students are exposed to.  Stereotypes exist due to people continuing to spread them and lumping people into categories. If school instead was focused on learning and each individual's potential and merit, we can remove the focus on students' gender/race/etc.
+  </article>
+  <hr>
+  <h3>Blocs, Procs, and Lambdas</h3>
+  <h4>March 31, 2015</h4>
+  <p></p>
+  <article>
+    Blocs, Procs, and Lambdas - does it sound like we're back in a Frat house in college yet?  As opposed to Greek letters, Blocs, Procs, and Lambdas are actually important tools that you can use in Ruby code.  They are essentially snippets of code which you tell the computer to do within a method.  We've already seen them when using enumerables, but here is an example:
+    <pre>
+    def method(arguments)
+      arguments.each {|argument| do something to the argument}
+    end
+    </pre>
+    The little bit in the curly brackets {} is what we call a Bloc.  Blocs function like a method in that they are telling the code to do something, but they are technically undefined and unnamed.
+  </article>
+  <p></p>
+  <article>
+    Procs are very similar to Blocs in that they also are bits of code which tell the computer to do something, however they are different in that they are defined and saved as a variable.  So you can take the exact same code as in our example above and define it as a variable which then can get passed into the method, instead of writing it out:
+    <pre>
+    proc = Proc.new {|argument| do something to the argument}
+
+    def method(arguments)
+      arguments.each(&proc)
+    end
+    </pre>
+    The only difference here is that you use the "&" sign when you pull the Proc into your method.  These can be useful when you want to assign your Proc more than one thing to do, or if you want to refer back to it multiple times in your code.
+  </article>
+  <p></p>
+  <article>
+    Last, but not least, we have Lambdas.  Lambdas are rarely used, but they are the same thing as Procs, but are more detailed like methods.  The other main difference is that you can use the "return" keyword within a Lambda since it will only return the Lambda, not the entire method.  If you use "return" in a Bloc or a Proc, it will exit out of the entire method at the return.  The other main difference is that Lambdas will check the number of arguments passed into it (like methods), whereas Procs and Blocs do not.
+  </article>
+  <hr>
   <h3>Feedback in DBC</h3>
   <h4>March 29, 2015</h4>
   <p></p>
@@ -299,6 +343,8 @@
 <right-column>
 <h4 class="right">Recent Posts</h4>
 <ul>
+  <li><a class="blog-link" href="c6-stereotype-threat.html">W6C: Stereotype Threat</a></li>
+  <li><a class="blog-link" href="t6-oop-concepts.html">W6T: Blocs, Procs, and Lambdas</a></li>
   <li><a class="blog-link" href="c5-feedback.html">W5C: Feedback</a></li>
   <li><a class="blog-link" href="t5-ruby-classes.html">W5T: Ruby Classes</a></li>
   <li><a class="blog-link" href="c4-tech-issues.html">W4C: Tech Issues</a></li>
