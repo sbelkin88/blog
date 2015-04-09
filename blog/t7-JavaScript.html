@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/CSS" rel="stylesheet" href="../default.css"/>
+  <link type="text/CSS" rel="stylesheet" href="blog-default.css"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+  <title>Samantha Belkin</title>
+</head>
+<body>
+<section class="top-bar">
+<section class="header" id="envelope">
+  <a href="mailto:samantha.belkin@gmail.com"><img src="https://github.com/sbelkin88/sbelkin88.github.io/blob/master/Envelope.png?raw=true"/></a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../about.html">ABOUT</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="blog-index.html">BLOG</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../projects.html">PROJECTS</a>
+</section>
+<div class="header">
+  &bull;
+</div>
+<section class="header">
+  <a href="../contact.html">CONTACT</a>
+</section>
+</section>
+<h1>
+  <a href="../index.html">SAMANTHA SARAH BELKIN</a>
+</h1>
+<h2>
+  contemplate, wish, wonder
+</h2>
+<hr id="line-break">
+
+<div-blog>
+  <h3>JavaScript vs. Ruby</h3>
+  <h4>April 8, 2015</h4>
+  <p></p>
+  <article>
+    This week we got our first glimpse into JavaScript.  Objectively speaking, the language is pretty similar to Ruby, and most of the concepts that exist in Ruby also exist in JavaScript, albeit with different syntax.  However, as we dug deeper it became more and more clear that JavaScript just doesn't have as many built-in capabilities as Ruby does.  I found myself wanting to do something that was so easy in Ruby (like calling a built-in method), and instead having to write the function in JavaScript first and then call it.  I remember back to my first week with Ruby and I felt lost because there was so much you could do, it felt infinite. I remember longing for the structure of SQL that I knew, but now that I'm playing in JavaScript, part of me keeps longing to go back and use Ruby instead! I do think that learning Ruby first was extremely helpful though, as catching onto JavaScript has been significantly easier since the underlying principles are very similar.
+  </article>
+  <p></p>
+  <article>
+    While similar, the syntax and structure of JavaScript does have some major differences.  For example, iterating (looping) through data structures not the same.  Whereas Ruby has many built-in methods that can tell how long your data structure is, and go through each instance automatically, JavaScript does not, and you have to tell the code how long you want the loop to go for.  Also whereas Ruby has several different ways of going about this (see previous post on <a class="inline_link" href="t4-enumerable-methods.html">Enumerables</a>), JavaScript really has 2 - <code>while</code> statements, and <code>for</code> statements.
+  </article>
+  <p></p>
+  <article>
+    Let's go through both examples.  First we'll define an array that we want to iterate through, for example:
+    <pre>
+      var array = ["1","2","3","4","5"]
+    </pre>
+    A <code>while</code> statement for this array would look like this:
+    <pre>
+      var counter = 0;
+      while (counter < array.length){
+        console.log(array[counter]);
+        counter ++;
+      }
+    </pre>
+    Going through the code, we first define a variable called counter and set it equal to 0.  The text in the parentheses tell the loop how many time to execute.  In this case we want the loop to execute the length of the array - 1.  So here the length of the array is 5, and the loop will actually run 5 times since we are starting the variable at 0.  So it will run when counter is 0, 1, 2, 3, and 4 in order to go through each element of the array (remember the index of the array begins at 0, not 1). The code in the curly brackets then is the code that should be executed.  So we are telling the computer, for every loop, print out the element of the array to the console, and add 1 to the counter.  If we don't include the last part, the code will just print out the first element of the array to infinity (or until it crashes).
+  </article>
+  <p></p>
+  <article>
+    <code>For</code> statements are very similar, but it allows you to write everything on one line instead of breaking it out.  So the same example as above but in a <code>for</code> loop would look like this:
+    <pre>
+      for (var counter = 0; counter < array.length; counter ++){
+        console.log(array[counter]);
+      }
+    </pre>
+    Again, to go through the code, the text in the parentheses are just setting the stage for how you want the loop to run, and the text in the curly bracket is the code to be executed each loop.  The elements in the parantheses are separated by semi-colons: the first element sets our counter variable to 0, the second element tells the loop to run the length of the array - 1 times, and the last element adds 1 to the counter variable on each run.  The code to be executed is just printing out to the console each element of the array.
+  </article>
+  <p></p>
+  <article>
+    To illustrate the difference between this and how Ruby executes loops, let's look at the same example in Ruby.  We have our array:
+    <pre>
+      array = ["1","2","3","4","5"]
+    </pre>
+    Now, instead of having to write all that code like in JavaScript, we can use an easy built-in method like this:
+    <pre>
+      array.each {|element| puts element}
+    </pre>
+    With Ruby you don't have to explicitly tell the loop how long to execute for, it will automatically go through every element in the array given.  So as mentioned above, while similar, the languages have different capabilities and built-in methods, as well as slightly different syntax.
+  </article>
+</div-blog>
+<right-column>
+<h4 class="right">Recent Posts</h4>
+<ul>
+  <li><a class="blog-link" href="c7-values.html">W7C: Values</a></li>
+  <li><a class="blog-link" href="t7-JavaScript.html">W7T: JavaScript vs. Ruby</a></li>
+  <li><a class="blog-link" href="c6-stereotype-threat.html">W6C: Stereotype Threat</a></li>
+  <li><a class="blog-link" href="t6-oop-concepts.html">W6T: Blocs, Procs, and Lambdas</a></li>
+  <li><a class="blog-link" href="c5-feedback.html">W5C: Feedback</a></li>
+  <li><a class="blog-link" href="t5-ruby-classes.html">W5T: Ruby Classes</a></li>
+  <li><a class="blog-link" href="c4-tech-issues.html">W4C: Tech Issues</a></li>
+  <li><a class="blog-link" href="t4-enumerable-methods.html">W4T: Enumerable Map</a></li>
+  <li><a class="blog-link" href="c3-thinking-style.html">W3C: Thinking Style</a></li>
+  <li><a class="blog-link" href="t3-arrays-hashes.html">W3T: Ruby Arrays and Hashes</a></li>
+  <li><a class="blog-link" href="t2-css-design.html">W2T: CSS Technical</a></li>
+  <li><a class="blog-link" href="c1-chefs-kitchen.html">W1C: Chef's Kitchen</a></li>
+  <li><a class="blog-link" href="t1-git-blog.html">W1T: Git Bloggin'</a></li>
+</ul>
+</right-column>
+<section class="footer">Copyright 2015 Samantha Belkin</section>
+</body>
+</html>

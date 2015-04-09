@@ -45,6 +45,76 @@
 <hr id="line-break">
 
 <div-blog>
+  <h3>Values and Self-Affirmation</h3>
+  <h4>April 9, 2015</h4>
+  <p></p>
+  <article>
+    **Disclaimer: this blog is based solely my opinion, and is not meant to discourage others' opinions**
+  <p></p>
+    The purpose of this week's cultural blog is to identify a few core values that are important to us and talk about how we can use self-affirmation with these values to help us succeed. To give a brief background on the topic, the practice of self-affirmation means that you identify values that are important to you and reflect on them in the face of adversity.  Several studies have shown that self-affirmation leads to a more favorable outcome - for example, performing better in school, and becoming healthier.  On the flip side of things, there are just as many studies which have been conducted and have not shown any differences due to self-affirmation. I think the process of identifying your underlying values, and reminding yourself of them, is an extremely positive practice, however I'm not convinced that this will be a life-changing solution.  I don't think self-affirmation is a magical cure that will improve your grades and make your skinnier.
+  </article>
+  <p></p>
+  <article>
+    One thing that also stuck out to me in all the reading is that, throughout all the scientific studies that were done, self-affirmation is found to be non-effective in non-marginalized groups.  While being a woman puts me in a "marginalized group", I don't think self-affirmation will have an effect if you don't feel marginalized to start with.  As mentioned last week, I personally do not feel the stereotype threat that women are not as intelligent as men in math; therefore I doubt self-affirmation would do anything to improve my grades in math.  Not to say that this is a waste of an exercise, but my thinking leads me to the other end of the spectrum.  Instead of focusing on self-affirmation, should we not be focusing on ending the marginalization and stereotypes in the first place?
+  </article>
+  <p></p>
+  <article>
+    I think that self-affirmation can be a great tool, especially as an interim solution.  However, I think a longer-term solution of more (and better) education and projects to eliminate the root cause would be more beneficial.  By promoting acceptance and having empathy for those around us, I think we can really change our society as a whole, which could considerably lessen the number of people who feel marginalized.  I'm not claiming to have all the answers, but in my opinion, repeating stereotypes only functions to sustain them.  By telling children there is a stereotype that boys will get better grades in math, I think you're perpetuating this and drawing attention to it, instead of encouraging them to be the best they can be, regardless of their gender.
+  </article>
+  <p></p>
+  <article>
+    To get back to the topic at hand, some of the values that I find most important are: having a family, health, honesty, compassion, and persistence.  When you get down to it, our society has become more and more focused on material items and impressing others, when I think we should really be looking inwards and seeing if we are living the life we want and if we are being kind, empathetic individuals.  I don't think it means much if we're going about life just to earn money to afford fancy cars or houses if we hate our jobs and are unhappy day after day.  I'd rather be happy than be swimming in money.  In addition to being kinder to ourselves, I think our society needs to be turned around too and people need to start being kinder to each other, more accepting of other beliefs, cultures, and customs, and more empathetic of others' situations.
+  </article>
+  <hr>
+  <h3>JavaScript vs. Ruby</h3>
+  <h4>April 8, 2015</h4>
+  <p></p>
+  <article>
+    This week we got our first glimpse into JavaScript.  Objectively speaking, the language is pretty similar to Ruby, and most of the concepts that exist in Ruby also exist in JavaScript, albeit with different syntax.  However, as we dug deeper it became more and more clear that JavaScript just doesn't have as many built-in capabilities as Ruby does.  I found myself wanting to do something that was so easy in Ruby (like calling a built-in method), and instead having to write the function in JavaScript first and then call it.  I remember back to my first week with Ruby and I felt lost because there was so much you could do, it felt infinite. I remember longing for the structure of SQL that I knew, but now that I'm playing in JavaScript, part of me keeps longing to go back and use Ruby instead! I do think that learning Ruby first was extremely helpful though, as catching onto JavaScript has been significantly easier since the underlying principles are very similar.
+  </article>
+  <p></p>
+  <article>
+    While similar, the syntax and structure of JavaScript does have some major differences.  For example, iterating (looping) through data structures not the same.  Whereas Ruby has many built-in methods that can tell how long your data structure is, and go through each instance automatically, JavaScript does not, and you have to tell the code how long you want the loop to go for.  Also whereas Ruby has several different ways of going about this (see previous post on <a class="inline_link" href="t4-enumerable-methods.html">Enumerables</a>), JavaScript really has 2 - <code>while</code> statements, and <code>for</code> statements.
+  </article>
+  <p></p>
+  <article>
+    Let's go through both examples.  First we'll define an array that we want to iterate through, for example:
+    <pre>
+      var array = ["1","2","3","4","5"]
+    </pre>
+    A <code>while</code> statement for this array would look like this:
+    <pre>
+      var counter = 0;
+      while (counter < array.length){
+        console.log(array[counter]);
+        counter ++;
+      }
+    </pre>
+    Going through the code, we first define a variable called counter and set it equal to 0.  The text in the parentheses tell the loop how many time to execute.  In this case we want the loop to execute the length of the array - 1.  So here the length of the array is 5, and the loop will actually run 5 times since we are starting the variable at 0.  So it will run when counter is 0, 1, 2, 3, and 4 in order to go through each element of the array (remember the index of the array begins at 0, not 1). The code in the curly brackets then is the code that should be executed.  So we are telling the computer, for every loop, print out the element of the array to the console, and add 1 to the counter.  If we don't include the last part, the code will just print out the first element of the array to infinity (or until it crashes).
+  </article>
+  <p></p>
+  <article>
+    <code>For</code> statements are very similar, but it allows you to write everything on one line instead of breaking it out.  So the same example as above but in a <code>for</code> loop would look like this:
+    <pre>
+      for (var counter = 0; counter < array.length; counter ++){
+        console.log(array[counter]);
+      }
+    </pre>
+    Again, to go through the code, the text in the parentheses are just setting the stage for how you want the loop to run, and the text in the curly bracket is the code to be executed each loop.  The elements in the parantheses are separated by semi-colons: the first element sets our counter variable to 0, the second element tells the loop to run the length of the array - 1 times, and the last element adds 1 to the counter variable on each run.  The code to be executed is just printing out to the console each element of the array.
+  </article>
+  <p></p>
+  <article>
+    To illustrate the difference between this and how Ruby executes loops, let's look at the same example in Ruby.  We have our array:
+    <pre>
+      array = ["1","2","3","4","5"]
+    </pre>
+    Now, instead of having to write all that code like in JavaScript, we can use an easy built-in method like this:
+    <pre>
+      array.each {|element| puts element}
+    </pre>
+    With Ruby you don't have to explicitly tell the loop how long to execute for, it will automatically go through every element in the array given.  So as mentioned above, while similar, the languages have different capabilities and built-in methods, as well as slightly different syntax.
+  </article>
+  <hr>
   <h3>Stereotype Threat</h3>
   <h4>April 1, 2015</h4>
   <p></p>
@@ -343,6 +413,8 @@
 <right-column>
 <h4 class="right">Recent Posts</h4>
 <ul>
+  <li><a class="blog-link" href="c7-values.html">W7C: Values</a></li>
+  <li><a class="blog-link" href="t7-JavaScript.html">W7T: JavaScript vs. Ruby</a></li>
   <li><a class="blog-link" href="c6-stereotype-threat.html">W6C: Stereotype Threat</a></li>
   <li><a class="blog-link" href="t6-oop-concepts.html">W6T: Blocs, Procs, and Lambdas</a></li>
   <li><a class="blog-link" href="c5-feedback.html">W5C: Feedback</a></li>
