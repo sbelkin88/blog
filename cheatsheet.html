@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/CSS" rel="stylesheet" href="cheatsheet.css"/>
+  <title>CSS Cheat Sheet</title>
+</head>
+<body>
+
+<div class = "header">
+<h1>CSS Cheat Sheet</h1>
+</div>
+
+<div class = "left_column">
+  <dl>
+    <dt class = "bold">Boxes</dt>
+    <dt>margin</dt>
+    <dt>margin-top</dt>
+    <dt>margin-right</dt>
+    <dt>margin-bottom</dt>
+    <dt>margin-left</dt>
+    <br>
+    <dt>padding</dt>
+    <dt>padding-top</dt>
+    <dt>padding-right</dt>
+    <dt>padding-bottom</dt>
+    <dt>padding-left</dt>
+    <br>
+    <dt>border</dt>
+    <dt>border-top</dt>
+    <dt>border-bottom</dt>
+    <dt>border-right</dt>
+    <dt>border-left</dt>
+    <br>
+    <dt>border-color</dt>
+    <dt>border-top-color</dt>
+    <dt>border-bottom-color</dt>
+    <dt>border-right-color</dt>
+    <dt>border-left-color</dt>
+    <br>
+    <dt>border-style</dt>
+    <dt>border-top-style</dt>
+    <dt>border-bottom-style</dt>
+    <dt>border-right-style</dt>
+    <dt>border-left-style</dt>
+    <br>
+    <dt>border-width</dt>
+    <dt>border-top-width</dt>
+    <dt>border-bottom-width</dt>
+    <dt>border-right-width</dt>
+    <dt>border-left-width</dt>
+    <br>
+    <dt class = "bold">Positioning</dt>
+    <dt>display</dt>
+    <dt>position</dt>
+    <dt>top</dt>
+    <dt>right</dt>
+    <dt>bottom</dt>
+    <dt>left</dt>
+    <dt>float</dt>
+    <dt>clear</dt>
+    <dt>z-index</dt>
+    <dt>direction</dt>
+    <dt>unicode-bidi</dt>
+    <dt>overflow</dt>
+    <dt>clip</dt>
+    <dt>visibility</dt>
+    <br>
+    <dt class = "bold">Dimensions</dt>
+    <dt>width</dt>
+    <dt>min-width</dt>
+    <dt>max-width</dt>
+    <dt>height</dt>
+    <dt>min-height</dt>
+    <dt>max-height</dt>
+    <dt>line-height</dt>
+    <dt>vertical-align</dt>
+    <br>
+    <dt class = "bold">Miscellaneous</dt>
+    <dt>content</dt>
+    <dt>quotes</dt>
+    <dt>counter-reset</dt>
+    <dt>counter-increment</dt>
+    <dt>marker-offset</dt>
+    <dt>list-style</dt>
+    <dt>list-style-type</dt>
+    <dt>list-style-image</dt>
+    <dt>list-style-position</dt>
+  </dl>
+</div>
+
+<div class = "left">
+  <table>
+    <th colspan = "2">SELECTORS</th>
+    <tr>
+      <td>*</td>
+      <td>All elements</td>
+    </tr>
+    <tr>
+      <td>div</td>
+      <td>&lt;div&gt;</td>
+    </tr>
+    <tr>
+      <td>div * </td>
+      <td>Elements within &lt;div&gt;</td>
+    </tr>
+    <tr>
+      <td>div span</td>
+      <td>&lt;span&gt; within &lt;div&gt;</td>
+    <tr>
+      <td>div + span</td>
+      <td>&lt;span&gt; preceded by &lt;div&gt; ... &lt;div&gt;</td>
+    </tr>
+    <tr>
+      <td>.class</td>
+      <td>Elements of class "class"</td>
+    </tr>
+    <tr>
+      <td>div.class</td>
+      <td>&lt;div&gt; of class "class"</td>
+    </tr>
+    <tr>
+      <td>#itemid</td>
+      <td>Element with id "itemid"</td>
+    </tr>
+    <tr>
+      <td>div#itemid</td>
+      <td>&lt;div&gt; with id "itemid"</td>
+    </tr>
+    <tr>
+      <td>a[class]</td>
+      <td>&lt;a&gt; with class attribute</td>
+    </tr>
+    <tr>
+      <td>a[class='x']</td>
+      <td>&lt;a&gt; when class is "x"</td>
+    </tr>
+    <tr>
+      <td>a[class~='x']</td>
+      <td>&lt;a&gt; when class is a list of space-seperated values and one of those is 'x'</td>
+    </tr>
+    <tr>
+      <td>a[lang|='en']</td>
+      <td>&lt;a&gt; when lang begins with "en"</td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <th colspan = "2">PSEUDO-SELECTORS</th>
+    <tr>
+      <td>:first-child</td>
+      <td>First child of element</td>
+    </tr>
+    <tr>
+      <td>:first-line</td>
+      <td>First line of element</td>
+    </tr>
+    <tr>
+      <td>:first-letter</td>
+      <td>First letter of element</td>
+    </tr>
+    <tr>
+      <td>:hover</td>
+      <td>Element when mouse over</td>
+    <tr>
+      <td>:active</td>
+      <td>Active element</td>
+    </tr>
+    <tr>
+      <td>:focus</td>
+      <td>Element with focus</td>
+    </tr>
+    <tr>
+      <td>:link</td>
+      <td>Non-active, unvisited links without mose over</td>
+    </tr>
+    <tr>
+      <td>:visited</td>
+      <td>Visited links</td>
+    </tr>
+    <tr>
+      <td>:lang(lang)</td>
+      <td>Element with text of language "lang"</td>
+    </tr>
+  </table>
+</div>
+<div class = "right">
+  <table>
+    <th colspan = "2">UNITS</th>
+    <tr>
+      <td>px</td>
+      <td>Pixels</td>
+    </tr>
+    <tr>
+      <td>em</td>
+      <td>1em equal to font size of parent (same as 100%)</td>
+    </tr>
+    <tr>
+      <td>ex</td>
+      <td>Height of lower case "x"</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>Percentage</td>
+    </tr>
+    <tr>
+      <td>in</td>
+      <td>Inches</td>
+    </tr>
+    <tr>
+      <td>cm</td>
+      <td>Centimeters</td>
+    </tr>
+    <tr>
+      <td>mm</td>
+      <td>Millimeters</td>
+    </tr>
+    <tr>
+      <td>pt</td>
+      <td>1pt = 1/72in</td>
+    </tr>
+    <tr>
+      <td>pc</td>
+      <td>1pc = 12pt</td>
+    </tr>
+    <tr>
+      <td>#789abc</td>
+      <td>RBG Hex Notation</td>
+    </tr>
+    <tr>
+      <td>#acf</td>
+      <td>Equates to "#aaccff"</td>
+    </tr>
+    <tr>
+      <td>rgb(0,25,50)</td>
+      <td>Value (0 to 255) of each of red, green, and blue</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0 requires no unit</td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <th colspan = "2">PROPERTIES THAT INHERIT</th>
+    <tr>
+      <td>azimuth</td>
+      <td>list-style</td>
+    </tr>
+    <tr>
+      <td>border-collapse</td>
+      <td>list-style-image</td>
+    </tr>
+    <tr>
+      <td>border-spacing</td>
+      <td>list-style-position</td>
+    </tr>
+    <tr>
+      <td>caption-side</td>
+      <td>list-style-type</td>
+    </tr>
+    <tr>
+      <td>color</td>
+      <td>orphans</td>
+    </tr>
+    <tr>
+      <td>cursor</td>
+      <td>page</td>
+    </tr>
+    <tr>
+      <td>direction</td>
+      <td>page-break-inside</td>
+    </tr>
+    <tr>
+      <td>empty-cells</td>
+      <td>quotes</td>
+    </tr>
+    <tr>
+      <td>font</td>
+      <td>speak</td>
+    </tr>
+    <tr>
+      <td>font-family</td>
+      <td>speak-header</td>
+    </tr>
+    <tr>
+      <td>font-stretch</td>
+      <td>text-align</td>
+    </tr>
+    <tr>
+      <td>font-size</td>
+      <td>text-indent</td>
+    </tr>
+    <tr>
+      <td>font-size-adjust</td>
+      <td>text-transform</td>
+    </tr>
+    <tr>
+      <td>font-style</td>
+      <td>volume</td>
+    </tr>
+    <tr>
+      <td>font-variant</td>
+      <td>white-space</td>
+    </tr>
+    <tr>
+      <td>font-weight</td>
+      <td>widows</td>
+    </tr>
+    <tr>
+      <td>letter-spacing</td>
+      <td>word-spacing</td>
+    </tr>
+    <tr>
+      <td>line-height</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+<div class = "right_column">
+  <dl>
+    <dt class = "bold">Paging</dt>
+    <dt>size</dt>
+    <dt>marks</dt>
+    <dt>page-break-before</dt>
+    <dt>page-break-after</dt>
+    <dt>page-break-inside</dt>
+    <dt>page</dt>
+    <dt>orphans</dt>
+    <dt>windows</dt>
+    <br>
+    <dt class = "bold">Color/Background</dt>
+    <dt>color</dt>
+    <dt>*background</dt>
+    <dt>background-color</dt>
+    <dt>background-image</dt>
+    <dt>background-repeat</dt>
+    <dt>background-attachment</dt>
+    <dt>background-position</dt>
+    <br>
+    <dt class = "bold">Fonts</dt>
+    <dt>*font</dt>
+    <dt>font-family</dt>
+    <dt>font-style</dt>
+    <dt>font-variant</dt>
+    <dt>font-weight</dt>
+    <dt>font-stretch</dt>
+    <dt>font-size</dt>
+    <dt>font-size-adjust</dt>
+    <p></p>
+    <dt class = "bold">Text</dt>
+    <dt>text-indent</dt>
+    <dt>text-align</dt>
+    <dt>text-decoration</dt>
+    <dt>text-shadow</dt>
+    <dt>letter-spacing</dt>
+    <dt>word-spacing</dt>
+    <dt>text-transform</dt>
+    <dt>white-space</dt>
+    <br>
+    <dt class = "bold">Tables</dt>
+    <dt>caption-side</dt>
+    <dt>table-layout</dt>
+    <dt>border-collapse</dt>
+    <dt>border-spacing</dt>
+    <dt>empty-cells</dt>
+    <dt>speak-header</dt>
+    <br>
+    <dt class = "bold">Interface</dt>
+    <dt>cursor</dt>
+    <dt>*outline</dt>
+    <dt>outline-width</dt>
+    <dt>outline-style</dt>
+    <dt>outline-color</dt>
+    <br>
+    <dt class = "bold">Aural</dt>
+    <dt>volume</dt>
+    <dt>speak</dt>
+    <dt>*pause</dt>
+    <dt>pause-before</dt>
+    <dt>pause-after</dt>
+    <dt>*cue</dt>
+    <dt>cue-before</dt>
+    <dt>cue-after</dt>
+    <dt>play-during</dt>
+    <dt>azimuth</dt>
+    <dt>elevation</dt>
+    <dt>speech-rate</dt>
+    <dt>voice-family</dt>
+    <dt>pitch</dt>
+    <dt>pitch-range</dt>
+    <dt>stress</dt>
+    <dt>richness</dt>
+    <dt>speak-punctuation</dt>
+    <dt>speak-numeral</dt>
+  </dl>
+</div>
+
+</body>
+</html>
