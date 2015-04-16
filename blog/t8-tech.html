@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/CSS" rel="stylesheet" href="../default.css"/>
+  <link type="text/CSS" rel="stylesheet" href="blog-default.css"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+  <title>Samantha Belkin</title>
+</head>
+<body>
+
+<script src="blog_header.js"></script>
+
+<div-blog>
+  <h3>Recursion</h3>
+  <h4>April 16, 2015</h4>
+  <p></p>
+  <article>
+    Recursion is a programming function in which you have self-referential definitions.  What this means is that the method or function calls itself.  You can think of recursion like a loop, but instead of writing an <code>each</code>, <code>for</code>, or <code>while</code> loop, the method just keeps calling itself until the defintion tells it to stop.  This is an important aspect of using recursion, because if you don't include what's called a base case, the method will run indefinitely (or until your program crashes).
+  </article>
+  <p></p>
+  <article>
+    Here is a basic example of a method using recursion:
+    <pre>
+      def greeting(n)
+        if n<=0
+          p "Bye!"
+        else
+          p "Hi!"
+          greeting(n-1)
+        end
+      end
+    </pre>
+    If you then call this method by writing:
+    <pre>
+      greeting(3)
+    </pre>
+    your output would be:
+    <pre>
+      "Hi!"
+      "Hi!"
+      "Hi!"
+      "Bye!"
+    </pre>
+    What this does it you define your base case as n<=0, where the method will print "Bye" and the program ends.  Otherwise it calls the method again using n-1.  So in this example the first time the program runs, n=3 so it prints "Hi!" and runs the method again with n=2.  This also prints "Hi!" and runs the method again with n=1.  Yet again it prints "Hi!" and then runs the method with n=0.  In this case we hit our base case so the method just prints "Bye!" and ends.
+  </article>
+  <p></p>
+  <article>
+    Methods with recursion can be very powerful, such as creating a method to create factorials or add all the numbers in a range.  Instead of having to iterate, you can use recursion and it will keep adding to a running total. For large tasks, recursion can generally be written with less code than iteration, and can be cleaner.  However with smaller tasks, iteration can be better to use as you don't have to worry about the call running indefinitely.
+  </article>
+</div-blog>
+
+<script src="recent_posts.js"></script>
+
+<section class="footer">Copyright 2015 Samantha Belkin</section>
+</body>
+</html>

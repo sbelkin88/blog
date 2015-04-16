@@ -2,6 +2,8 @@ document.write('\
 <right-column>\
 <h4 class="right">Recent Posts</h4>\
 <ul>\
+<li><a class="blog-link" href="c8-conflict.html">W8C: Conflict</a></li>\
+  <li><a class="blog-link" href="t8-tech.html">W8T: Recursion</a></li>\
   <li><a class="blog-link" href="c7-values.html">W7C: Values</a></li>\
   <li><a class="blog-link" href="t7-JavaScript.html">W7T: JavaScript vs. Ruby</a></li>\
   <li><a class="blog-link" href="c6-stereotype-threat.html">W6C: Stereotype Threat</a></li>\
