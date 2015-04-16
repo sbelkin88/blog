@@ -11,6 +11,66 @@
 <script src="blog_header.js"></script>
 
 <div-blog>
+  <h3>Conflict</h3>
+  <h4>April 12, 2015</h4>
+  <p></p>
+  <article>
+    This week's cultural blog focuses on conflict, and the basic emotions that arise during it.  The most recent conflict I had was the week before I left my job, and one of my managers asked me to go and set-up all of my deliverables that are sent via email, in our automated workflow tool to show as reminders.  I thought that this was a pointless exercise since the concept of reminders doesn't really exist in this system.  Once we set-up the event, it doesn't disappear until the deliverable is sent out through the tool, or a manager manually deletes the event.  In this case, since these deliverables are sent via email, a manager would have to go and manually delete each event as they are completed.
+  </article>
+  <p></p>
+  <article>
+    In my opinion, this was a waste of time on my part, as it takes roughly 5 minutes to set-up each event, and I was setting up around 30-35 events, and it was a waste of time on the manager's side as they would have to go and delete all these events every quarter when they appeared.  On a deeper level I was upset because they didn't value my time (albeit I was leaving the job, and they knew that), but I was also upset that they wanted to create and maintain an even more "babysitter" culture.  In my old job, if a person forgot to do something repeatedly, or didn't do a good job, they wouldn't get reprimanded, or face the possibility of losing their job - they would only get more "babysat" and someone would have to add to their list to continually remind this person of tasks that needed to be completed.
+  </article>
+  <p></p>
+  <article>
+    I feel that this practice is very unfair to those of us that actually do a good job since we don't get rewarded for it; we could also do a terrible job and get babysat, and still receive the same salary and benefits.  I was upset that my management chose to enable this behavior and continue this practice instead of addressing the real issue and saving everybody the headache of the extra responsibilities.
+  </article>
+  <p></p>
+  <article>
+    Unfortunately, being at a disadvantage, I wasn't really able to say anything.  I re-asked the objective and tried to make them explain, but there wasn't really an option for me.  I pride myself on doing a good job for the team, and wanted to leave my job with good relationships intact, so I completed the task as asked.  I do think they got the hint that I thought it was a meaningless exercise however.  In this particular circumstance I don't think I could have/would have done anything differently, but I do wish that there had been a way to discuss the root issues with someone higher up on my team.  I think that if the culture of the team changed, we could all be capable of doing more and producing better work, instead of having the responsibilities of someone else's job on our shoulders as well as our own.
+  </article>
+  <p></p>
+  <article>
+    From this experience (and really all the prior experiences of the same nature leading up to this) was that I needed a new firm culture to be a part of.  I don't want to be on a team that accepts laziness and rewards it, but rather a team where everyone gives it their all, and takes pride in their work.  This was obviously a decision I came to before this moment of conflict, but it brought out the same feelings and made me more sure of my move.
+  </article>
+  <hr>
+  <h3>Recursion</h3>
+  <h4>April 16, 2015</h4>
+  <p></p>
+  <article>
+    Recursion is a programming function in which you have self-referential definitions.  What this means is that the method or function calls itself.  You can think of recursion like a loop, but instead of writing an <code>each</code>, <code>for</code>, or <code>while</code> loop, the method just keeps calling itself until the defintion tells it to stop.  This is an important aspect of using recursion, because if you don't include what's called a base case, the method will run indefinitely (or until your program crashes).
+  </article>
+  <p></p>
+  <article>
+    Here is a basic example of a method using recursion:
+    <pre>
+      def greeting(n)
+        if n<=0
+          p "Bye!"
+        else
+          p "Hi!"
+          greeting(n-1)
+        end
+      end
+    </pre>
+    If you then call this method by writing:
+    <pre>
+      greeting(3)
+    </pre>
+    your output would be:
+    <pre>
+      "Hi!"
+      "Hi!"
+      "Hi!"
+      "Bye!"
+    </pre>
+    What this does it you define your base case as n<=0, where the method will print "Bye" and the program ends.  Otherwise it calls the method again using n-1.  So in this example the first time the program runs, n=3 so it prints "Hi!" and runs the method again with n=2.  This also prints "Hi!" and runs the method again with n=1.  Yet again it prints "Hi!" and then runs the method with n=0.  In this case we hit our base case so the method just prints "Bye!" and ends.
+  </article>
+  <p></p>
+  <article>
+    Methods with recursion can be very powerful, such as creating a method to create factorials or add all the numbers in a range.  Instead of having to iterate, you can use recursion and it will keep adding to a running total. For large tasks, recursion can generally be written with less code than iteration, and can be cleaner.  However with smaller tasks, iteration can be better to use as you don't have to worry about the call running indefinitely.
+  </article>
+  <hr>
   <h3>Values and Self-Affirmation</h3>
   <h4>April 9, 2015</h4>
   <p></p>
