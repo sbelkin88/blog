@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/CSS" rel="stylesheet" href="../default.css"/>
+  <link type="text/CSS" rel="stylesheet" href="blog-default.css"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+  <title>Samantha Belkin</title>
+</head>
+<body>
+
+<script src="blog_header.js"></script>
+
+<div-blog>
+  <h3>Building My Website</h3>
+  <h4>April 22, 2015</h4>
+  <p></p>
+  <article>
+    This week I decided to purchase a domain name for my website and try to set it up - this wound up being much more complicated than I thought it would be (and I think it should be), but with some help from my dad, I got it working, and thought I'd write about the process.  This post will be solely about linking a GitHub pages site with a custom domain name.  You can see the <a href ="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/" class="inline_link">GitHub FAQ page</a> from which I started.  First you need to purchase a domain name (URL) through a DNS (domain name system) provider like GoDaddy - you can find deals for around $0.99 for the first year.  In this case, my site will still be hosted by GitHub, so I didn't pay for hosting services, just the URL.
+  </article>
+  <p></p>
+  <article>
+    Next you need to add a CNAME file to your GitHub repo - you can do this by creating a new file in Sublime (or any text editor) and saving it as CNAME in your root directory of your repo.  The only text in the file should be your URL that you purchased (in my case www.samanthasarah.com).  By using a CNAME file, you are using the subdomain, so you have to include the "www." at the beginning.  Once this has been committed, you should be able to click on your repo's settings and it should say something along the lines of "Your site is published at http://www.samanthasarah.com".  This is needed in order to link your personal GitHub page with your URL.  In the next step you are only linking your domain name to GitHub's IP address, and this file provides the link to your specific site.
+  </article>
+  <p></p>
+  <article>
+    Now comes the tricky part - you have to set this up on the DNS provider's side as well.  I purchased my URL through GoDaddy, so I went to their website to login and manage my domain there.  Under your control panel on their site you should be able to add/edit your DNS Zones.  Under the CNAME section, you add a record with the Host of www and it Points To your github.io page.  By doing this, when you type www.samanthasarah.com in the browser, your github.io site will load.  You could feasibly stop here, but you wouldn't be able to get to your site if a user typed anything but that exact URL (for example samanthasarah.com wouldn't work).  In order for all cases to work we have to set-up an "A" record which is also managed in the same area of your DNS provider.  The Host in this case should be @ and it should Point To the IP address of your host (in this case GitHub) - I had to search through their FAQ to find this, but it's located <a href ="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/" class = "inline_link">here</a>.  Once you set-up both of these records, a user can get to your website by either including or excluding the "www." portion of your URL.
+  </article>
+  <p></p>
+  <article>
+    I hope that was helpful, and good luck setting up your own custom URLs for your personal site!
+  </article>
+</div-blog>
+
+<script src="recent_posts.js"></script>
+
+<section class="footer">Copyright 2015 Samantha Belkin</section>
+</body>
+</html>

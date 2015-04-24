@@ -2,7 +2,9 @@ document.write('\
 <right-column>\
 <h4 class="right">Recent Posts</h4>\
 <ul>\
-<li><a class="blog-link" href="c8-conflict.html">W8C: Conflict</a></li>\
+  <li><a class="blog-link" href="c9-questions.html">W9C: Asking Good Questions</a></li>\
+  <li><a class="blog-link" href="t9-website.html">W9T: Building My Website</a></li>\
+  <li><a class="blog-link" href="c8-conflict.html">W8C: Conflict</a></li>\
   <li><a class="blog-link" href="t8-tech.html">W8T: Recursion</a></li>\
   <li><a class="blog-link" href="c7-values.html">W7C: Values</a></li>\
   <li><a class="blog-link" href="t7-JavaScript.html">W7T: JavaScript vs. Ruby</a></li>\
